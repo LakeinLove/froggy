@@ -6,7 +6,7 @@
 #define RAYLIB_TEMPLATE_BLOCK_H
 
 #include "raylib.h"
-#include "raymath.h"
+
 
 struct Block{
     Vector3 position;

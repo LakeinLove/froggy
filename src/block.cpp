@@ -4,7 +4,7 @@
 
 
 #include "block.h"
-
+#include "raymath.h"
 
 void CreateBlock(Block* block, float posX, float posY, float posZ, Color face, Color wire){
     block->position = (Vector3){posX, posY, posZ};
