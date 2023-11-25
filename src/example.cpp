@@ -43,9 +43,7 @@ int main()
     camera.up = (Vector3){0.0f, 1.0f, 0.0f};            // Camera up vector (Rotation towards target)
     camera.fovy = 45.0f;                                        // Camera FOV Y
     camera.projection = CAMERA_PERSPECTIVE;
-    Block blockOne = {0}, blockTwo = {0};
-    CreateBlock(&blockOne, 0.0f, 0.0f, 0.0f, GREEN, WHITE);
-    CreateBlock(&blockTwo, 4.0f, 0.0f, 4.0f, GREEN, WHITE);
+
 
 
 
@@ -71,8 +69,6 @@ int main()
         BeginMode3D(camera);
 
 
-        DrawBlock(&blockOne);
-        DrawBlock(&blockTwo);
         DrawGrid(20, 1.0f);
 
         EndMode3D();

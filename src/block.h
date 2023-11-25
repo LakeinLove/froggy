@@ -9,14 +9,13 @@
 
 
 struct Block{
-    Vector3 position;
-    Color face;
-    Color wire;
+    Color color;
+    bool isActive;
+
 };
 
 
-void DrawBlock(const Block* block);
-void CreateBlock(Block* block, float posX, float posY, float posZ, Color face, Color wire);
+
 
 
 #endif //RAYLIB_TEMPLATE_BLOCK_H
