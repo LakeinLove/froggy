@@ -19,18 +19,9 @@ struct VoxelChunk{
 
 };
 
-typedef enum{
-    BLOCK_FRONT,
-    BLOCK_BACK,
-    BLOCK_TOP,
-    BLOCK_BOTTOM,
-    BLOCK_LEFT,
-    BLOCK_RIGHT
-}BlockFace;
-
 int GetVoxelIndex(int x, int y, int z);
 
-void SetBlock(VoxelChunk* chunk, int position, Color color, int visible);
+void SetBlock(VoxelChunk* chunk, int position, Color color, bool visible);
 
 bool CoordinateValid(int coordinate);
 
