@@ -19,14 +19,20 @@ struct VoxelChunk{
 
 };
 
+void AllocateMesh(Mesh* chunkMesh, int faces);
+
 int GetVoxelIndex(int x, int y, int z);
 
 void SetBlock(VoxelChunk* chunk, int position, Color color, bool visible);
+
+void AddBlockToChunk(VoxelChunk* chunk, int position, unsigned int faces);
+
+void BuildChunkMesh(const VoxelChunk* chunk);
 
 bool CoordinateValid(int coordinate);
 
 bool IsBlockInChunkVisible(const VoxelChunk* chunk, int x, int y, int z);
 
-unsigned long int GetChunkFaceCount(const VoxelChunk* chunk);
+unsigned int GetChunkFaceCount(const VoxelChunk* chunk);
 
 #endif //FROGGY_CHUNK_H
